@@ -44,6 +44,7 @@ public:
 			sf::Sprite sprite(background);
 			this->draw(sprite);
 			this->draw(text);
+			player->move();
 			this->draw(this->player->getSprite());
 			this->display();
 		}
